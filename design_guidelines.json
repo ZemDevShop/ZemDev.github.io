@@ -1,0 +1,84 @@
+{
+  "project_name": "ZemDev",
+  "app_type": "ecommerce",
+  "theme": "dark",
+  "archetype": "7 (Electric & Neon)",
+  "design_concept": "Cyberpunk Gaming Marketplace for FiveM Dev Resources",
+  "colors": {
+    "background_primary": "#050505",
+    "background_secondary": "#0A0A0C",
+    "background_card": "#111114",
+    "primary": "#39FF14",
+    "primary_hover": "#4ADE80",
+    "accent_purple": "#8A2BE2",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A1A1AA",
+    "border_subtle": "rgba(255, 255, 255, 0.1)",
+    "border_neon_green": "rgba(57, 255, 20, 0.3)"
+  },
+  "typography": {
+    "headings": "Unbounded",
+    "body": "Outfit",
+    "code_and_badges": "JetBrains Mono",
+    "hero_h1_classes": "text-6xl sm:text-[clamp(4rem,12vw,9rem)] font-black tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-600",
+    "h2_classes": "text-3xl sm:text-4xl font-bold tracking-tight",
+    "body_classes": "text-base leading-relaxed font-light"
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "p-4, p-6, p-8, p-12, p-24, p-32",
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "bento_grid": "grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6",
+    "card_padding": "p-6"
+  },
+  "surface_strategies": {
+    "header": "backdrop-blur-xl bg-black/60 border-b border-white/10 z-50 sticky top-0",
+    "product_cards": "bg-[#111114] border border-white/5 hover:border-[#39FF14]/50 hover:shadow-[0_0_20px_rgba(57,255,20,0.15)] transition-all duration-300 relative overflow-hidden rounded-xl group",
+    "buttons_primary": "bg-[#39FF14] text-black font-bold uppercase tracking-widest px-8 py-3 rounded-none hover:bg-[#4ADE80] transition-colors shadow-[0_0_15px_rgba(57,255,20,0.4)]",
+    "buttons_secondary": "bg-transparent border border-white/20 text-white font-medium px-6 py-2 rounded-none hover:border-[#8A2BE2] hover:text-[#8A2BE2] transition-colors",
+    "badges": "bg-[#8A2BE2]/10 text-[#8A2BE2] border border-[#8A2BE2]/30 px-2 py-1 text-xs uppercase tracking-widest rounded-none font-mono"
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1674159057061-394f68e750a5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwxfHxjeWJlcnB1bmslMjBuaWdodCUyMGNpdHl8ZW58MHx8fHwxNzc3MTYwMzIxfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Cyberpunk night city traffic, used with extreme opacity/gradient overlay (bg-black/80) so the neon lights barely bleed through. Placed behind the ZemDev massive text."
+    },
+    "category_vehicles": {
+      "url": "https://images.unsplash.com/photo-1759926953612-e48779f26629?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxuZW9uJTIwc3BvcnRzJTIwY2FyJTIwZGFya3xlbnwwfHx8fDE3NzcxNjAzMjF8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Sports car driving through glowing blue tunnel for the Vehicles category card or product placeholder."
+    },
+    "category_scripts": {
+      "url": "https://images.unsplash.com/photo-1742072594013-c87f855e29ca?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwzfHxjb2RlJTIwb24lMjBzY3JlZW4lMjBncmVlbnxlbnwwfHx8fDE3NzcxNjAzMjF8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Computer code displayed on black background for the Scripts/Bases category card or placeholder."
+    },
+    "product_placeholder_1": {
+      "url": "https://images.pexels.com/photos/17195067/pexels-photo-17195067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Vibrant urban alley with neon signs for general MLO/Map product placeholder."
+    },
+    "product_placeholder_2": {
+      "url": "https://images.unsplash.com/photo-1677522375375-c035e66971b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwzfHxuZW9uJTIwc3BvcnRzJTIwY2FyJTIwZGFya3xlbnwwfHx8fDE3NzcxNjAzMjF8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Purple and yellow car in the dark for specific vehicle mod product."
+    }
+  },
+  "motion_and_effects": {
+    "hover_states": "All interactive elements must change color and add a subtle drop-shadow glow. Product cards should slightly lift (-translate-y-1).",
+    "hero_animation": "Ensure the massive 'ZemDev' hero text is immediately visible. Apply a subtle glow animation if possible. Do NOT use standard Vercel gradients.",
+    "glitch_effect": "Optional: Add a CSS glitch effect on hover for the ZemDev logo in the header."
+  },
+  "component_instructions": {
+    "modals": "Use Shadcn Dialog for product details and the purchase modal. Background: #0A0A0C, border: 1px border-white/10. Primary CTA inside must be Neon Green.",
+    "tables": "For the Admin Dashboard, use Shadcn Table. No backgrounds on rows, just border-b border-white/5. Hover state: bg-white/5.",
+    "inputs": "Shadcn Input heavily customized: bg-[#050505], border-white/10, focus:border-[#39FF14] focus:ring-1 focus:ring-[#39FF14]/50.",
+    "testing": "All interactive and key informational elements MUST include a data-testid attribute in kebab-case."
+  },
+  "instructions_to_main_agent": [
+    "Install and configure Google Fonts: 'Unbounded' (Headings), 'Outfit' (Body), and 'JetBrains Mono' (Code/Badges/Tech).",
+    "Install lucide-react for all iconography.",
+    "Build the hero section with MASSIVE 'ZemDev' text. Use fluid typography clamp(4rem, 12vw, 9rem) to respect maximum class rules while achieving the requested giant size.",
+    "Ensure the entire app is wrapped in a dark theme by default (<div className='dark text-white bg-[#050505] min-h-screen'>).",
+    "Implement the product catalog grid. Create a beautiful Product Card component containing an image, title, price in MXN, and a category badge.",
+    "Design the Purchase Modal to clearly display BBVA bank transfer information and a Discord contact button (which can utilize the Purple accent color).",
+    "Build the Admin Dashboard with a login view, and a table view to add/edit/delete products. Keep it dense and data-focused.",
+    "DO NOT use placeholder image URLs like via.placeholder.com. Use the Unsplash/Pexels media URLs provided in this JSON.",
+    "Ensure all buttons, inputs, links, and forms have appropriate data-testid attributes for testing."
+  ]
+}
